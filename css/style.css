@@ -35,7 +35,7 @@ body {
   max-width: 1146px;
 
   margin: auto;
-  padding: 2.3%;
+  padding: 0 2.3%;
 }
 
 .btn {
@@ -247,9 +247,9 @@ body {
   position: relative;
   display: inline-block;
 
-  width: 22.2%
+  width: 22%;
 
-  margin-right: 2.2%;
+  margin-right: 2.3%;
 }
 
 .icecream-item:nth-child(4n) {
@@ -257,10 +257,21 @@ body {
 }
 
 .icecream-item figure {
-  width: 22.2%
+  display: inline-block;
+  max-width: 267px;
+  min-width: 200px;
+  max-height: 267px;
+  max-width: 267px;
 
   margin: 0;
   padding: 0;
+}
+
+.icecream-item img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
 }
 
 .icecream-item .item-price {
