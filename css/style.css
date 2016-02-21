@@ -1,0 +1,327 @@
+/*Common rules*/
+body {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.clearfix:after{
+  content:"";
+
+  display:table;
+
+  clear:both;
+}
+
+.main-logo {
+  background-color: #849d8f;
+}
+
+.site-wrapper {
+  min-width: 900px;
+  max-width: 1200px;
+
+  background-color: #849d8f;
+  background-image: url("../img/slide1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+.content-wrapper {
+  min-width: 860px;
+  max-width: 1146px;
+
+  margin: auto;
+  padding: 2.3%;
+}
+
+.btn {
+  font-size: 18px;
+}
+
+/*INDEX.HTML*/
+
+.site-wrapper input {
+  display: none;
+}
+
+.main-header {
+  font-size: 0px;
+}
+
+.menu-logo {
+  float: left;
+  width: 170px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation {
+  float: left;
+  max-width: 705px;
+  min-width: 440px;
+}
+
+.main-menu {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 0;
+}
+
+.main-menu__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sub-menu {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu a {
+  display: block;
+}
+
+.user-block {
+  float: right;
+  max-width: 290px;
+  min-width: 260px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.user-block li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-menu a {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+.sub-menu a {
+  font-size: 14px;
+}
+
+.header-menu-contacts {
+  float: right;
+  display: inline-block;
+
+  max-width: 179px;
+
+  text-align: right;
+}
+
+.header-menu-contacts span {
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.header-menu-contacts span:last-child {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.slider {
+  position: relative;
+
+  padding-top: 270px;
+
+  text-align: center;
+  color: #ffffff;
+
+  font-size: 0;
+}
+
+.slide-title {
+  max-width: 700px;
+
+  margin: auto;
+  margin-bottom: 30px;
+
+  font-size: 60px;
+  line-height: 67px;
+  font-weight: 800;
+}
+
+.slide-btn {
+  display: inline-block;
+  padding: 12px 50px;
+
+  vertical-align: top;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.description-header {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.news-block h2 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.news-block a {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.contacts span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts span:nth-child(2n) {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts span:nth-child(4) {
+  line-height: 22px;
+}
+
+.banner-row {
+  font-size: 0;
+}
+
+.banner-left {
+  float: left;
+  display: inline-block;
+
+  width: 44.4%;
+}
+
+.banner-right {
+  float: right;
+  display: inline-block;
+
+  width: 44.4%;
+}
+
+.banners-row h1{
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.banner-row p {
+  font-size: 18px;
+}
+
+.banner-btn {
+  line-height: 20px;
+}
+
+.icecream-row {
+  font-size: 0px;
+}
+
+.icecream-item {
+  position: relative;
+  display: inline-block;
+
+  width: 22.2%
+
+  margin-right: 2.2%;
+}
+
+.icecream-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.icecream-item figure {
+  width: 22.2%
+
+  margin: 0;
+  padding: 0;
+}
+
+.icecream-item .item-price {
+  display: block;
+
+  position: absolute;
+  left: 0;
+  top: 215px;
+
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.item-price strong {
+  font-size: 45px;
+}
+
+.icecream-item .item-name {
+  display: block;
+
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/*gllacy-catalog.html*/
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.content-conteiner h1 {
+  font-size: 35px;
+  line-height: 30px;
+}
+
+.filter-label {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-select option {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-select option:first-child {
+  line-height: 18px;
+}
+
+.filter-inputs {
+  line-height: 18px;
+}
+
+/*FOOTER*/
+
+.footer-menu a {
+  line-height: 18px;
+}
+
+.footer-copyright span {
+  line-height: 18px;
+}
