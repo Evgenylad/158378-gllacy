@@ -5,6 +5,7 @@ body {
   color: #ffffff;
   font-weight: normal;
   line-height: 22px;
+
 }
 
 .clearfix:after{
@@ -21,7 +22,6 @@ body {
 
 .site-wrapper {
   min-width: 900px;
-  max-width: 1200px;
 
   background-color: #849d8f;
   background-image: url("../img/slide1.png");
@@ -42,9 +42,24 @@ body {
   font-size: 18px;
 }
 
+.orange-btn {
+  vertical-align: top;
+
+  color: #ffffff;
+  line-height: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
 /*INDEX.HTML*/
 
-.site-wrapper input {
+.site-wrapper > input {
   display: none;
 }
 
@@ -142,6 +157,7 @@ body {
 .slider {
   position: relative;
 
+  margin-bottom: 40px;
   padding-top: 270px;
 
   text-align: center;
@@ -164,34 +180,275 @@ body {
 .slide-btn {
   display: inline-block;
   padding: 12px 50px;
-
-  vertical-align: top;
-  color: #ffffff;
-  font-size: 32px;
-  line-height: 36px;
-  font-weight: 600;
-  text-decoration: none;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-  background: #f26843;
-  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 100px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
-.description-header {
+.banners-row {
+  margin-bottom: 40px;
+
+  font-size: 0;
+}
+
+.banner-left {
+  float: left;
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 48.86%;
+
+  padding: 20px;
+
+  background-color: #580116;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.banner-right {
+  float: right;
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 48.86%;
+
+  padding: 20px;
+
+  background-color: #211210;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.banners-row h1{
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.banners-row p {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.banner-btn {
+  float: right;
+  display: inline-block;
+
+  padding: 13px 29px;
+}
+
+.icecream-row {
+  margin-bottom: 40px;
+  font-size: 0px;
+}
+
+.icecream-item {
+  position: relative;
+  display: inline-block;
+
+  width: 23.2%;
+
+  margin-right: 2.3%;
+  vertical-align: top;
+
+}
+
+.icecream-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.icecream-item figure {
+  margin: 0;
+  padding: 0;
+}
+
+.icecream-item img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.icecream-item .item-price {
+  display: block;
+
+  position: absolute;
+  left: 0;
+  bottom: 120px;
+
+
+  font-size: 30px;
+  font-weight: 800;
+  vertical-align: top;
+}
+
+.item-price strong {
+  font-size: 45px;
+}
+
+.icecream-item .item-name {
+  display: block;
+
+  max-width: 257px;
+  min-width: 190px;
+
+  padding: 0 5px;
+
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.icecream-item:nth-child(4n) .item-name {
+  max-width: 247px;
+  min-width: 180px;
+
+  padding: 0 10px;
+
+}
+
+.shop-description {
+
+  box-sizing: border-box;;
+  width: 100%;
+
+  padding: 28px 20px;
+  margin-bottom: 40px;
+
+  font-size: 0px;
+  color: #323232;
+
+  background-color: #efe2c9;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.shop-description .description-header {
+  margin: 0;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
 }
 
-.news-block h2 {
+.shop-description .description-list {
+  padding: 0;
+  margin: 0;
+}
+.shop-description .description-item {
+  display: inline-block;
+
+  width: 40%;
+
+  padding-left: 58px;
+  padding-top: 27px;
+
+  vertical-align: top;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
-.news-block a {
+.shop-description .description-item:nth-child(even) {
+  padding-left: 76px;
+  width: 41.5%
+}
+
+.news-block {
+  margin-bottom: 40px;
+}
+
+.news-block .blog-promo {
+  float: left;
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 48.86%;
+
+  padding: 25px 20px;
+
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.blog-promo h2 {
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #5a5a5a;
+}
+
+.blog-promo a {
+  display: block;
+  max-width: 290px;
+
+  margin-bottom: 85px;
+
   font-size: 24px;
   line-height: 28px;
+
+  color: #353535;
+}
+
+.news-block .subscribe-wrapper {
+  float: right;
+
+  box-sizing: border-box;
+  width: 48.86%;
+
+  padding: 30px 25px;;
+
+  font-size: 0;
+
+  background-color: #f8f7f4;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.subscribe-item p {
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+.subscribe-input {
+  display: inline-block;
+
+  width: 66%;
+  min-height: 22px;
+
+  padding: 12px 10px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+
+  color: #999999;
+  border: 1px solid #d3d3d2;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.subscribe-btn {
+  display: inline-block;
+
+  padding: 13px 20px;
+
+  font-size: 17px;
+  border: 0;
+  outline: 0;
 }
 
 .contacts span {
@@ -206,90 +463,6 @@ body {
 
 .contacts span:nth-child(4) {
   line-height: 22px;
-}
-
-.banner-row {
-  font-size: 0;
-}
-
-.banner-left {
-  float: left;
-  display: inline-block;
-
-  width: 44.4%;
-}
-
-.banner-right {
-  float: right;
-  display: inline-block;
-
-  width: 44.4%;
-}
-
-.banners-row h1{
-  font-size: 35px;
-  line-height: 40px;
-}
-
-.banner-row p {
-  font-size: 18px;
-}
-
-.banner-btn {
-  line-height: 20px;
-}
-
-.icecream-row {
-  font-size: 0px;
-}
-
-.icecream-item {
-  position: relative;
-  display: inline-block;
-
-  width: 23.2%;
-
-  margin-right: 2.3%;
-}
-
-.icecream-item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.icecream-item figure {
-  display: inline-block;
-
-  margin: 0;
-  padding: 0;
-}
-
-.icecream-item img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-}
-
-.icecream-item .item-price {
-  display: block;
-
-  font-size: 30px;
-  font-weight: 800;
-}
-
-.item-price strong {
-  font-size: 45px;
-}
-
-.icecream-item .item-name {
-  display: block;
-
-  max-width: 267px;
-  min-width: 200px;
-
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
 }
 
 /*gllacy-catalog.html*/
