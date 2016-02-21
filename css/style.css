@@ -247,7 +247,7 @@ body {
   position: relative;
   display: inline-block;
 
-  width: 22%;
+  width: 23.2%;
 
   margin-right: 2.3%;
 }
@@ -258,10 +258,6 @@ body {
 
 .icecream-item figure {
   display: inline-block;
-  max-width: 267px;
-  min-width: 200px;
-  max-height: 267px;
-  max-width: 267px;
 
   margin: 0;
   padding: 0;
@@ -277,10 +273,6 @@ body {
 .icecream-item .item-price {
   display: block;
 
-  position: absolute;
-  left: 0;
-  top: 215px;
-
   font-size: 30px;
   font-weight: 800;
 }
@@ -291,6 +283,9 @@ body {
 
 .icecream-item .item-name {
   display: block;
+
+  max-width: 267px;
+  min-width: 200px;
 
   font-size: 16px;
   line-height: 22px;
