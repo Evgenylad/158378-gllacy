@@ -5,7 +5,6 @@ body {
   color: #ffffff;
   font-weight: normal;
   line-height: 22px;
-
 }
 
 .clearfix:after{
@@ -60,7 +59,7 @@ body {
 
 /*INDEX.HTML*/
 
-.site-wrapper > input {
+body > input[type="radio"] {
   display: none;
 }
 
@@ -101,6 +100,7 @@ body {
   margin-right: 26px;
 
   vertical-align: top;
+  font-size: 0;
 }
 
 .main-menu__item .menu-active {
@@ -116,7 +116,12 @@ body {
 }
 
 .main-menu__item > a {
+  display: inline-block;
 
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  vertical-align: top;
   color: #ffffff;
   font-weight: 800;
   font-size: 16px;
@@ -126,20 +131,20 @@ body {
 .sub-menu {
   position: absolute;
   left: -8px;
-  top: 55px;
+  top: 45px;
 
   list-style: none;
 
   max-width: 143px;
   max-height: 171px;
 
-  padding: 20px;
+  padding: 0;
+  padding-bottom: 20px;
   margin: 0;
 
 
   background-color: #f8f7f4;
   border-radius: 10px;
-
 }
 
 .sub-menu a {
@@ -152,20 +157,29 @@ body {
 }
 
 .sub-menu__item {
-  margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .sub-menu__item:first-child {
   font-weight: 800;
 
-  margin-bottom: 10px;
   padding-bottom: 15px;
+}
 
-  border-bottom: 1px solid #d1d0ce;
+.sub-menu__item_divider {
+  border: 1px solid #d1d0ce;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .sub-menu__item_active {
-  margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-color: #fbded8;
 }
@@ -189,6 +203,7 @@ body {
   margin-right: 9px;
 
   vertical-align: top;
+  font-size: 0;
 }
 
 .user-block__item:last-child {
@@ -196,6 +211,9 @@ body {
 }
 
 .user-block__item a {
+  display: inline-block;
+
+  vertical-align: top;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -207,17 +225,66 @@ body {
 }
 
 .user-block__item .cart {
+  position: relative;
+
   padding: 8px 33px;
   padding-left: 45px;
 }
 
+.user-block__item .cart::before {
+  content: "";
+
+  position: absolute;
+  left: 17px;
+  top: 6px;
+
+  width: 21px;
+  height: 20px;
+
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -5px -5px;
+}
+
+
 .user-block__item .login {
+  position: relative;
+
   padding: 8px 15px;
   padding-left: 45px;
 }
 
+.user-block__item .login::before {
+  content: "";
+
+  position: absolute;
+  left: 17px;
+  top: 6px;
+
+  width: 21px;
+  height: 20px;
+
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -90px -89px;
+}
+
 .user-block__item .search {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  background-color: #a9c0b3;
   border-radius: 100%;
+}
+
+.search img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translate(-50%, -50%);
+
 }
 
 .header-menu-contacts {
@@ -252,6 +319,10 @@ body {
   font-size: 0;
 }
 
+.slide {
+  display: none;
+}
+
 .slide-title {
   max-width: 700px;
 
@@ -266,6 +337,58 @@ body {
 .slide-btn {
   display: inline-block;
   padding: 12px 50px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+
+  width: 17px;
+  height: 17px;
+
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#radio1:checked ~ .site-wrapper #slide1,
+#radio2:checked ~ .site-wrapper #slide2,
+#radio3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#radio1:checked ~ .site-wrapper label[for="radio1"],
+#radio2:checked ~ .site-wrapper label[for="radio2"],
+#radio3:checked ~ .site-wrapper label[for="radio3"] {
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .site-wrapper {
+ background-image: url("../img/slide1.png");
+ background-color: #8da799;
+}
+
+#radio2:checked ~ .site-wrapper {
+  background-image: url("../img/slide2.png");
+  background-color: #97a6b6;
+}
+
+#radio3:checked ~ .site-wrapper {
+  background-image: url("../img/slide3.png");
+  background-color: #b3a098;
 }
 
 .banners-row {
@@ -284,6 +407,9 @@ body {
   padding: 20px;
 
   background-color: #580116;
+  background-image: url("../img/raspberry-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid #ffffff;
   border-radius: 10px;
 }
@@ -298,6 +424,9 @@ body {
   padding: 20px;
 
   background-color: #211210;
+  background-image: url("../img/chockolate-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid #ffffff;
   border-radius: 10px;
 }

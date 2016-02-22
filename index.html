@@ -9,10 +9,11 @@
 
   </head>
   <body>
+    <input type="radio" id="radio1" name="toggle" checked>
+    <input type="radio" id="radio2" name="toggle">
+    <input type="radio" id="radio3" name="toggle">
+
     <div class="site-wrapper">
-      <input type="radio" id="radio1" name="toggle" checked>
-      <input type="radio" id="radio2" name="toggle">
-      <input type="radio" id="radio3" name="toggle">
 
       <div class="content-wrapper">
 
@@ -29,6 +30,7 @@
 
                   <ul class="sub-menu">
                     <li class="sub-menu__item"><a href="#">Новинки</a></li>
+                    <li class="sub-menu__item_divider"></li>
                     <li class="sub-menu__item"><a href="gllacy-catalog.html">Сливочное</a></li>
                     <li class="sub-menu__item_active"><a href="#">Щербеты</a></li>
                     <li class="sub-menu__item"><a href="#">Фруктовый лед</a></li>
@@ -41,7 +43,7 @@
             </nav>
 
             <ul class="user-block">
-              <li class="user-block__item"><a class="search" href="#">Поиск</a></li>
+              <li class="user-block__item"><a class="search" href="#"><img src="img/search.png" width="17" height="17" alt="Search Image"></a></li>
               <li class="user-block__item"><a class="login" href="#">Вход</a></li>
               <li class="user-block__item"><a class="cart" href="#">Пусто</a></li>
             </ul>
@@ -72,9 +74,9 @@
             </div>
 
             <div class="slider-controls">
-              <label for="slide1"></label>
-              <label for="slide2"></label>
-              <label for="slide3"></label>
+              <label for="radio1"></label>
+              <label for="radio2"></label>
+              <label for="radio3"></label>
             </div>
           </div>
 
