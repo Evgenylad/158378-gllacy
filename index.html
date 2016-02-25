@@ -29,7 +29,6 @@
                   <a class="menu-active" href="#">Каталог</a>
 
                   <ul class="sub-menu">
-                    <li class="sub-menu__item sub-menu__item--hidden"></li>
                     <li class="sub-menu__item"><a href="#">Новинки</a></li>
                     <li class="sub-menu__item sub-menu__item--divider"></li>
                     <li class="sub-menu__item"><a href="gllacy-catalog.html">Сливочное</a></li>
@@ -48,6 +47,51 @@
               <li class="user-block__item"><a class="login" href="#">Вход</a></li>
               <li class="user-block__item"><a class="cart" href="#">Пусто</a></li>
             </ul>
+          </div>
+
+          <div class="search-form-popup">
+            <form action="/" method="post">
+              <input type="text" name="search" id="search" placeholder="Что ищем?">
+            </form>
+          </div>
+
+          <div class="login-form-popup">
+            <form action="/" method="post">
+              <input type="text" name="email" id="login-email" placeholder="Электронная почта" required>
+              <input type="password" name="password" id="login-password" placeholder="Пароль" required>
+              <button class="btn orange-btn login__btn">Войти</button>
+            </form>
+            <div class="login-form-popup__item">
+              <a class="login-form-popup__item--link" href="#">Забыли пароль?</a>
+              <a class="login-form-popup__item--link" href="#">Новая регистрация</a>
+            </div>
+          </div>
+
+          <div class="cart-form-popup">
+            <form action="/" method="post">
+              <table class="popup-table">
+                <tr class="popup-table-row popup-table-row1">
+                  <td class="popup-table-cell popup-table-cell-close"></td>
+                  <td class="popup-table-cell popup-table-cell-picture"></td>
+                  <td class="popup-table-cell popup-table-cell-name">Пломбир с апельсиновым джемом</td>
+                  <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 200 руб.</td>
+                  <td class="popup-table-cell popup-table-cell-price">300 руб.</td>
+                </tr>
+                <tr class="popup-table-row popup-table-row2">
+                  <td class="popup-table-cell popup-table-cell-close"></td>
+                  <td class="popup-table-cell popup-table-cell-picture"></td>
+                  <td class="popup-table-cell popup-table-cell-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 300 руб.</td>
+                  <td class="popup-table-cell popup-table-cell-price">400 руб.</td>
+                </tr>
+                <tr class="popup-table-row popup-table-row3">
+                  <td class="popup-table-cell popup-table-cell-total" colspan="4">Итого:</td>
+                  <td class="popup-table-cell popup-table-cell-amount">750 руб.</td>
+                </tr>
+              </table>
+
+              <a class="cart-form-popup__item--link" type="button" href="#">Оформить заказ</a>
+            </form>
           </div>
 
           <div class="header-menu-contacts">
@@ -79,6 +123,25 @@
               <label for="radio2"></label>
               <label for="radio3"></label>
             </div>
+          </div>
+
+          <div class="contacts-form-popup clearfix">
+            <button class="contacts-form-popup-close" type="button" title="Закрыть"></button>
+
+            <h2>Мы обязательно вам ответим!</h2>
+
+            <form action="/" method="post">
+              <input class="contact-name-input" type="text" name="name" id="name" required>
+              <label class="contact-name-label" for="name">Как вас зовут?</label>
+
+              <input class="contact-email-input" type="text" name="email" id="contact-email" required>
+              <label class="contact-email-label" for="contact-email">Ваша почта для ответа?</label>
+
+              <input class="contact-text-input" type="text" name="text" id="text" required>
+              <label class="contact-text-label" for="text">Напишите что-нибудь...</label>
+
+              <button class="btn orange-btn contacts-form-popup__btn">Отправить</button>
+            </form>
           </div>
 
           <section class="banners-row clearfix">
@@ -118,7 +181,7 @@
 
             <div class="icecream-item">
 
-              <figure>
+              <figure class="icecream-item--picture">
                 <img src="img/сream-strawberry-white-chock.png" width="267" height="267" alt="Cream Strawberry White Chocolate" >
                 <span class="item-price"><strong>355</strong><i></i>/кг</span>
               </figure>
@@ -142,16 +205,16 @@
               развес</h1>
 
             <ul class="description-list">
-              <li class="description-item">Все наше мороженое изготавливается на собственном
+              <li class="description-item description-item-first">Все наше мороженое изготавливается на собственном
                 производстве, с использованием современного оборудования и
                 проверенных временем технологий.</li>
-              <li class="description-item">Закупка ингредиентов  производится только у проверенных
+              <li class="description-item description-item-second">Закупка ингредиентов  производится только у проверенных
               фермерских хозяйств и компаний, с которыми нас связывает
               долговременное сотрудничество.</li>
-              <li class="description-item">Для приготовления мороженого используются настоящие сливки и
+              <li class="description-item description-item-third">Для приготовления мороженого используются настоящие сливки и
                 молоко высочайшего качества. Все дополнительные ингредиенты и
                 добавки произведены из натурального, экологически чистого сырья.</li>
-              <li class="description-item">Доставка нашего мороженого до заказчиков осуществляется в
+              <li class="description-item description-item-forth">Доставка нашего мороженого до заказчиков осуществляется в
                 специальном термопаке, которая не дает мороженому растаять в
                 пути и позволяет ему сохранить свой превосходный вкус.</li>
             </ul>
@@ -165,7 +228,7 @@
             </div>
 
             <div class="subscribe-wrapper">
-              <div class="subscribe-item">
+              <div class="subscribe-wrapper__item clearfix">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
                   самого вкусного, что у нас происходит. Обещаем не спамить и не слать
                   всякой не нужной ерунды. Честно =)</p>
@@ -221,7 +284,11 @@
 
         </footer>
       </div>
-    </div>
 
+
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+      <script src="js/script.js"></script>
+
+    </div>
   </body>
 </html>
