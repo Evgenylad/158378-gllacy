@@ -1296,6 +1296,12 @@ body > input[type="radio"] {
 .sorting-row {
   border: 0;
   font-size: 0;
+
+  margin-bottom: 15px;
+}
+
+.sorting-row:last-child {
+  margin-bottom: 40px;
 }
 
 .filter-parametr {
@@ -1315,8 +1321,9 @@ body > input[type="radio"] {
 }
 
 .filter-select-wrapper {
+  position: relative;
   width: 170px;
-  height: 38px;
+  height: 37px;
   overflow: hidden;
 
   background-color: #a9bab0;
@@ -1324,36 +1331,54 @@ body > input[type="radio"] {
 
 }
 
+.filter-select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 15px;
+
+  width: 9px;
+  height: 5px;
+
+  background-image: url("../img/marker-for-select_white.png");
+}
+
 .filter-select {
   width: 193px;
-  height: 38px;
+  height: 37px;
 
   padding-left: 15px;
-  
+
   border: none;
   outline: none;
 
+  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
   background: transparent;
   background: rgba(0, 0, 0, 0);
   -webkit-appearance: none;
 }
 
-.filter-select option {
-  font-family: "Roboto", "Tahoma", sans-serif;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 16px;
+.filter-select:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.filter-select option:first-child {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 800;
+.filter-select-wrapper:hover::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 15px;
+
+  width: 9px;
+  height: 5px;
+
+  background-image: url("../img/marker-for-select.png");
 }
 
 .filter-inputs {
-  padding: 7px 15px;
+  padding: 10px 15px;
   line-height: 18px;
   background-color: #a6b7ad;
   border-radius: 100px;
@@ -1431,6 +1456,50 @@ body > input[type="radio"] {
 
   background-image: url("../img/sprite.png");
   background-position:  -10px -553px;
+}
+
+.btn-view {
+  display: none;
+}
+
+.icecream-item {
+  position: relative;
+}
+
+.icecream-item:hover::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+
+  min-width: 277px;
+  min-height: 406px;
+
+  background-color: rgba(175, 190, 180, 0.4);
+  border-radius: 10px;
+}
+
+.icecream-item:hover .btn-view {
+  display: block;
+  position: absolute;
+  bottom: -10%;
+  left: 15%;
+
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.pagination {
+  float: right;
+  width: 30%;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.pagination-btn {
+  display: inline-block;
 }
 
 /*FOOTER*/
