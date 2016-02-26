@@ -907,9 +907,6 @@ body > input[type="radio"] {
 
 }
 
-.item-price i {
-
-}
 .icecream-item .item-name {
   display: block;
 
@@ -918,6 +915,7 @@ body > input[type="radio"] {
 
   padding: 0 5px;
 
+  color: #ffffff;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -929,6 +927,23 @@ body > input[type="radio"] {
 
   padding: 0 10px;
 
+}
+
+.icecream-item {
+  position: relative;
+}
+
+.icecream-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/hit-label.png");
 }
 
 .shop-description {
