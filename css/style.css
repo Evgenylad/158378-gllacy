@@ -50,7 +50,7 @@ body {
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
-  background: #f26843;
+  background: #f06341;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -890,6 +890,7 @@ body > input[type="radio"] {
   position: relative;
 
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
 }
 
@@ -1462,32 +1463,53 @@ body > input[type="radio"] {
   display: none;
 }
 
-.icecream-item {
+.catalog-icecream-item {
   position: relative;
 }
 
-.icecream-item:hover::after {
+.catalog-icecream-item:hover::before {
   content: "";
   position: absolute;
   top: -5px;
-  left: -5px;
+  bottom: -55px;
+  left: -10px;
+  right: -10px;
+  z-index: 10;
 
-  min-width: 277px;
-  min-height: 406px;
+  min-width: 219px;
+  min-height: 363px;
 
-  background-color: rgba(175, 190, 180, 0.4);
+  background-color: rgba(167, 184, 173, 0.4);
   border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.icecream-item:hover .btn-view {
-  display: block;
+.catalog-icecream-item:hover .btn-view {
+  display: inline-block;
   position: absolute;
-  bottom: -10%;
-  left: 15%;
+  bottom: -15%;
+  left: 50%;
+  z-index: 22;
 
-  padding: 10px 28px;
+  min-width: 138px;
+
+  padding: 10px 29px;
+  margin-bottom: 10px;
+
   font-size: 15px;
+  line-height: 17px;
   font-weight: 800;
+  transform: translateX(-50%);
+}
+
+.catalog-item-name {
+  position: relative;
+  z-index: 21;
+}
+
+.catalog-figure {
+  position: relative;
+  z-index: 21;
 }
 
 .pagination {
