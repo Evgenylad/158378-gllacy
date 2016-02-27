@@ -276,7 +276,6 @@ body > input[type="radio"] {
   text-decoration: none;
   border-radius: 100px;
   background-color: #a9c0b3;
-
 }
 
 .user-block__item .cart {
@@ -291,7 +290,7 @@ body > input[type="radio"] {
 
   position: absolute;
   left: 17px;
-  top: 6px;
+  top: 8px;
 
   width: 21px;
   height: 20px;
@@ -300,11 +299,10 @@ body > input[type="radio"] {
   background-position: -81px -198px
 }
 
-
 .user-block__item .login {
   position: relative;
 
-  padding: 8px 15px;
+  padding: 8px 25px;
   padding-left: 45px;
 }
 
@@ -313,7 +311,7 @@ body > input[type="radio"] {
 
   position: absolute;
   left: 17px;
-  top: 6px;
+  top: 8px;
 
   width: 21px;
   height: 20px;
@@ -322,15 +320,33 @@ body > input[type="radio"] {
   background-position: -81px -228px;
 }
 
-.user-block__item .search {
+.user-block .login:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.user-block .login:hover::before {
+  content: "";
+
+  position: absolute;
+  left: 17px;
+  top: 8px;
+
+  width: 21px;
+  height: 20px;
+
+  background: url("../img/login-black.png") no-repeat;
+}
+
+.user-block .search {
   position: relative;
   width: 33px;
   height: 33px;
   background-color: #a9c0b3;
-  border-radius: 100%;
+  border-radius: 100px;
 }
 
-.search img {
+.user-block .search::before {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -339,7 +355,27 @@ body > input[type="radio"] {
   height: 17px;
 
   transform: translate(-50%, -50%);
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -72px -585px;
+}
 
+.user-block .search:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.user-block .search:hover::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translate(-50%, -50%);
+  background: url("../img/search-black.png") no-repeat;
 }
 
 .header-menu-contacts {
@@ -635,6 +671,7 @@ body > input[type="radio"] {
 }
 
 .search-form-popup {
+  display: none;
   position: absolute;
   top: 70px;
   left: 50.5%;
@@ -646,6 +683,7 @@ body > input[type="radio"] {
 
   border-radius: 10px;
   background-color: #f8f7f4;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -662,22 +700,24 @@ body > input[type="radio"] {
   border-radius: 7px;
 }
 
+
 .login-form-popup {
   position: absolute;
+  top: 70px;
+  left: 63.5%;
 
   width: 243px;
   height: 145px;
-
-  top: 70px;
-  left: 63.5%;
 
   padding: 20px 15px;
 
   border-radius: 10px;
   background-color: #f8f7f4;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.login-form-popup input[type="text"] {
+.login-form-popup input[type="text"],
+.login-form-popup input[type="password"] {
   width: 223px;
   height: 6px;
 
@@ -718,6 +758,7 @@ body > input[type="radio"] {
 }
 
 .cart-form-popup {
+  display: none;
   position: absolute;
 
   width: 539px;
@@ -730,17 +771,21 @@ body > input[type="radio"] {
   vertical-align: middle;
   border-radius: 10px;
   background-color: #f8f7f4;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .cart-form-popup .popup-table {
   color: #000000;
   font-size: 13px;
   line-height: 15px;
-
-  border: 1px solid black;
 }
+
 .popup-table-row {
   height: 55px;
+}
+
+.popup-table-row2 {
+  border-bottom: 1px solid #cacac7;
 }
 
 .popup-table-cell-close {
@@ -774,7 +819,6 @@ body > input[type="radio"] {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border: 1px solid black;
 }
 
 .popup-table-row2 .popup-table-cell-picture {
@@ -784,25 +828,26 @@ body > input[type="radio"] {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border: 1px solid black;
 }
 
 .popup-table-cell-name {
   width: 240px;
-
-  border: 1px solid black;
 }
 
 .popup-table-cell-kilos {
   width: 120px;
-
-  border: 1px solid black;
 }
 
 .popup-table-cell-price {
   width: 80px;
+}
 
-  border: 1px solid black;
+.cart-btn {
+  float: right;
+
+  padding: 10px 24px;
+
+  margin-top: 10px;
 }
 
 .banners-row {
@@ -1479,7 +1524,7 @@ body > input[type="radio"] {
   min-width: 219px;
   min-height: 363px;
 
-  background-color: rgba(167, 184, 173, 0.4);
+  background-color: rgba(167, 184, 173, 0.3);
   border-radius: 10px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
@@ -1491,7 +1536,7 @@ body > input[type="radio"] {
   left: 50%;
   z-index: 22;
 
-  min-width: 138px;
+  min-width: 139px;
 
   padding: 10px 29px;
   margin-bottom: 10px;
