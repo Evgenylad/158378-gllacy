@@ -43,55 +43,63 @@
             </nav>
 
             <ul class="user-block">
-              <li class="user-block__item user-block__item--search"><a class="search" href="#"></a></li>
-              <li class="user-block__item user-block__item--login"><a class="login" href="#">Вход</a></li>
-              <li class="user-block__item user-block__item--cart"><a class="cart" href="#">Пусто</a></li>
+              <li class="user-block__item user-block__item--search">
+                <a class="user-block__item--link search" href="#"></a>
+
+                <div class="search-form-popup">
+                  <form action="/" method="post">
+                    <input type="text" name="search" id="search" placeholder="Что ищем?">
+                  </form>
+                </div>
+              </li>
+
+              <li class="user-block__item user-block__item--login">
+                <a class="user-block__item--link login" href="#">Вход</a>
+
+                <div class="login-form-popup">
+                  <form action="/" method="post">
+                    <input type="text" name="email" id="login-email" placeholder="Электронная почта" required>
+                    <input type="password" name="password" id="login-password" placeholder="Пароль" required>
+                    <button class="btn orange-btn login__btn">Войти</button>
+                  </form>
+                  <div class="login-form-popup__item">
+                    <a class="login-form-popup__item--link" href="#">Забыли пароль?</a>
+                    <a class="login-form-popup__item--link" href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="user-block__item">
+                <a class="user-block__item--link cart" href="#">Пусто</a>
+
+                <div class="cart-form-popup clearfix">
+                  <form action="/" method="post">
+                    <table class="popup-table">
+                      <tr class="popup-table-row popup-table-row1">
+                        <td class="popup-table-cell popup-table-cell-close"></td>
+                        <td class="popup-table-cell popup-table-cell-picture"></td>
+                        <td class="popup-table-cell popup-table-cell-name">Пломбир с апельсиновым джемом</td>
+                        <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 200 руб.</td>
+                        <td class="popup-table-cell popup-table-cell-price">300 руб.</td>
+                      </tr>
+                      <tr class="popup-table-row popup-table-row2">
+                        <td class="popup-table-cell popup-table-cell-close"></td>
+                        <td class="popup-table-cell popup-table-cell-picture"></td>
+                        <td class="popup-table-cell popup-table-cell-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                        <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 300 руб.</td>
+                        <td class="popup-table-cell popup-table-cell-price">400 руб.</td>
+                      </tr>
+                      <tr class="popup-table-row popup-table-row3">
+                        <td class="popup-table-cell popup-table-cell-total" colspan="4">Итого:</td>
+                        <td class="popup-table-cell popup-table-cell-amount">750 руб.</td>
+                      </tr>
+                    </table>
+
+                    <a class="btn orange-btn cart-btn" type="button" href="#">Оформить заказ</a>
+                  </form>
+                </div>
+              </li>
             </ul>
-          </div>
-
-          <div class="search-form-popup">
-            <form action="/" method="post">
-              <input type="text" name="search" id="search" placeholder="Что ищем?">
-            </form>
-          </div>
-
-          <div class="login-form-popup">
-            <form action="/" method="post">
-              <input type="text" name="email" id="login-email" placeholder="Электронная почта" required>
-              <input type="password" name="password" id="login-password" placeholder="Пароль" required>
-              <button class="btn orange-btn login__btn">Войти</button>
-            </form>
-            <div class="login-form-popup__item">
-              <a class="login-form-popup__item--link" href="#">Забыли пароль?</a>
-              <a class="login-form-popup__item--link" href="#">Новая регистрация</a>
-            </div>
-          </div>
-
-          <div class="cart-form-popup clearfix">
-            <form action="/" method="post">
-              <table class="popup-table">
-                <tr class="popup-table-row popup-table-row1">
-                  <td class="popup-table-cell popup-table-cell-close"></td>
-                  <td class="popup-table-cell popup-table-cell-picture"></td>
-                  <td class="popup-table-cell popup-table-cell-name">Пломбир с апельсиновым джемом</td>
-                  <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 200 руб.</td>
-                  <td class="popup-table-cell popup-table-cell-price">300 руб.</td>
-                </tr>
-                <tr class="popup-table-row popup-table-row2">
-                  <td class="popup-table-cell popup-table-cell-close"></td>
-                  <td class="popup-table-cell popup-table-cell-picture"></td>
-                  <td class="popup-table-cell popup-table-cell-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 300 руб.</td>
-                  <td class="popup-table-cell popup-table-cell-price">400 руб.</td>
-                </tr>
-                <tr class="popup-table-row popup-table-row3">
-                  <td class="popup-table-cell popup-table-cell-total" colspan="4">Итого:</td>
-                  <td class="popup-table-cell popup-table-cell-amount">750 руб.</td>
-                </tr>
-              </table>
-
-              <a class="btn orange-btn cart-btn" type="button" href="#">Оформить заказ</a>
-            </form>
           </div>
 
           <div class="header-menu-contacts">

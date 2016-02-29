@@ -12,8 +12,8 @@
     <div class="site-wrapper">
 
       <div class="content-wrapper">
-
         <header class="main-header clearfix">
+
           <div class="header-menu clearfix">
             <figure class="menu-logo">
               <img src="img/header-logo.png" width="154" height="64" alt="Gllacy Logo">
@@ -22,7 +22,7 @@
             <nav class="main-navigation">
               <ul class="main-menu">
                 <li class="main-menu__item main-menu__item--dropdown">
-                  <a class="menu-active" href="#">Каталог</a>
+                  <a class="menu-active current" href="#">Каталог</a>
 
                   <ul class="sub-menu">
                     <li class="sub-menu__item"><a href="#">Новинки</a></li>
@@ -39,70 +39,76 @@
             </nav>
 
             <ul class="user-block">
-              <li class="user-block__item"><a class="search" href="#"><img src="img/search.png" width="17" height="17" alt="Search Image"></a></li>
-              <li class="user-block__item"><a class="login" href="#">Вход</a></li>
-              <li class="user-block__item"><a class="cart" href="#">Пусто</a></li>
+              <li class="user-block__item user-block__item--search">
+                <a class="user-block__item--link search" href="#"></a>
+
+                <div class="search-form-popup">
+                  <form action="/" method="post">
+                    <input type="text" name="search" id="search" placeholder="Что ищем?">
+                  </form>
+                </div>
+              </li>
+
+              <li class="user-block__item user-block__item--login">
+                <a class="user-block__item--link login" href="#">Вход</a>
+
+                <div class="login-form-popup">
+                  <form action="/" method="post">
+                    <input type="text" name="email" id="login-email" placeholder="Электронная почта" required>
+                    <input type="password" name="password" id="login-password" placeholder="Пароль" required>
+                    <button class="btn orange-btn login__btn">Войти</button>
+                  </form>
+                  <div class="login-form-popup__item">
+                    <a class="login-form-popup__item--link" href="#">Забыли пароль?</a>
+                    <a class="login-form-popup__item--link" href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="user-block__item">
+                <a class="user-block__item--link cart" href="#">Пусто</a>
+
+                <div class="cart-form-popup clearfix">
+                  <form action="/" method="post">
+                    <table class="popup-table">
+                      <tr class="popup-table-row popup-table-row1">
+                        <td class="popup-table-cell popup-table-cell-close"></td>
+                        <td class="popup-table-cell popup-table-cell-picture"></td>
+                        <td class="popup-table-cell popup-table-cell-name">Пломбир с апельсиновым джемом</td>
+                        <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 200 руб.</td>
+                        <td class="popup-table-cell popup-table-cell-price">300 руб.</td>
+                      </tr>
+                      <tr class="popup-table-row popup-table-row2">
+                        <td class="popup-table-cell popup-table-cell-close"></td>
+                        <td class="popup-table-cell popup-table-cell-picture"></td>
+                        <td class="popup-table-cell popup-table-cell-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                        <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 300 руб.</td>
+                        <td class="popup-table-cell popup-table-cell-price">400 руб.</td>
+                      </tr>
+                      <tr class="popup-table-row popup-table-row3">
+                        <td class="popup-table-cell popup-table-cell-total" colspan="4">Итого:</td>
+                        <td class="popup-table-cell popup-table-cell-amount">750 руб.</td>
+                      </tr>
+                    </table>
+
+                    <a class="btn orange-btn cart-btn" type="button" href="#">Оформить заказ</a>
+                  </form>
+                </div>
+              </li>
             </ul>
           </div>
 
-          <div class="search-form-popup">
-            <form action="/" method="post">
-              <input type="text" name="search" id="search" placeholder="Что ищем?">
-            </form>
+          <div class="header-menu-contacts">
+            <span>С 10 до 20, ежедневно</span>
+            <span>8 812 450-25-25</span>
           </div>
 
-          <div class="login-form-popup">
-            <form action="/" method="post">
-              <input type="text" name="email" id="login-email" placeholder="Электронная почта" required>
-              <input type="password" name="password" id="login-password" placeholder="Пароль" required>
-              <button class="btn orange-btn login__btn">Войти</button>
-            </form>
-            <div class="login-form-popup__item">
-              <a class="login-form-popup__item--link" href="#">Забыли пароль?</a>
-              <a class="login-form-popup__item--link" href="#">Новая регистрация</a>
-            </div>
-          </div>
+          <ul class="breadcrumbs">
+            <li>Главная</li>
+            <li>Каталог</li>
+            <li class="breadcrumbs-active">Сливочное</li>
+          </ul>
 
-          <div class="cart-form-popup">
-            <form action="/" method="post">
-              <table class="popup-table">
-                <tr class="popup-table-row popup-table-row1">
-                  <td class="popup-table-cell popup-table-cell-close"></td>
-                  <td class="popup-table-cell popup-table-cell-picture"></td>
-                  <td class="popup-table-cell popup-table-cell-name">Пломбир с апельсиновым джемом</td>
-                  <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 200 руб.</td>
-                  <td class="popup-table-cell popup-table-cell-price">300 руб.</td>
-                </tr>
-                <tr class="popup-table-row popup-table-row2">
-                  <td class="popup-table-cell popup-table-cell-close"></td>
-                  <td class="popup-table-cell popup-table-cell-picture"></td>
-                  <td class="popup-table-cell popup-table-cell-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="popup-table-cell popup-table-cell-kilos">1,5кг x 300 руб.</td>
-                  <td class="popup-table-cell popup-table-cell-price">400 руб.</td>
-                </tr>
-                <tr class="popup-table-row popup-table-row3">
-                  <td class="popup-table-cell popup-table-cell-total" colspan="4">Итого:</td>
-                  <td class="popup-table-cell popup-table-cell-amount">750 руб.</td>
-                </tr>
-              </table>
-
-              <a class="cart-form-popup__item--link" type="button" href="#">Оформить заказ</a>
-            </form>
-          </div>
-
-          <div>
-            <div class="header-menu-contacts">
-              <span>С 10 до 20, ежедневно</span>
-              <span>8 812 450-25-25</span>
-            </div>
-
-            <ul class="breadcrumbs">
-              <li>Главная</li>
-              <li>Каталог</li>
-              <li class="breadcrumbs-active">Сливочное</li>
-            </ul>
-
-          </div>
         </header>
 
         <main class="content-container clearfix">
