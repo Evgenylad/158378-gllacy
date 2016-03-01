@@ -161,10 +161,14 @@ body > input[type="radio"] {
 .main-menu__item--dropdown {
   position: relative;
   padding-bottom: 20px;
+  margin-right: 13px;
 }
 
-.main-menu__item .menu-active:hover {
+.main-menu__item .menu-active {
   padding: 8px 13px;
+}
+
+.main-menu__item--dropdown:hover .menu-active {
 
   color: #242424;
   font-weight: 800;
@@ -332,12 +336,12 @@ body > input[type="radio"] {
   background-position: -81px -228px;
 }
 
-.user-block .login:hover {
+.user-block__item--login:hover .login {
   background-color: #ffffff;
   color: #000000;
 }
 
-.user-block .login:hover::before {
+.user-block__item--login:hover .login::before {
   content: "";
 
   position: absolute;
@@ -355,6 +359,8 @@ body > input[type="radio"] {
   position: absolute;
   top: 70px;
   left: 63.5%;
+
+   z-index: 10;
 
   width: 243px;
   height: 145px;
@@ -425,6 +431,8 @@ body > input[type="radio"] {
   top: 70px;
   left: 50.5%;
 
+  z-index: 10;
+
   width: 312px;
   height: 38px;
 
@@ -466,12 +474,12 @@ body > input[type="radio"] {
   background-position: -72px -585px;
 }
 
-.user-block .search:hover {
+.user-block__item--search:hover .search {
   background-color: #ffffff;
   color: #000000;
 }
 
-.user-block .search:hover::before {
+.user-block__item--search:hover .search::before {
   content: "";
 
   position: absolute;
@@ -1377,6 +1385,18 @@ body > input[type="radio"] {
   padding-right: 15px;
 }
 
+.sorting-row .form-btn {
+  margin-top: 23px;
+  padding: 8px 29px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #fcfcfc;
+  background-color: #a6b7ae;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+
 .filter-label {
   display: block;
 
@@ -1545,9 +1565,9 @@ body > input[type="radio"] {
   min-width: 219px;
   min-height: 363px;
 
-  background-color: rgba(167, 184, 173, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .catalog-icecream-item:hover .btn-view {
